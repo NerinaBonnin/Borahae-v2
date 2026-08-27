@@ -2516,16 +2516,106 @@ button, p{
 }
 
 /* ─── MODALS ─── */
-.modal-overlay{
-  display:none;
-  position:fixed;
-  inset:0;
-  z-index:250;
-  background:rgba(60,47,42,.82);
-  backdrop-filter:blur(5px);
-  align-items:center;
-  justify-content:center;
-  padding:2rem
+/* Estructura general de la tarjeta modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 16px;
+  max-width: 680px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  color: #222222;
+}
+
+.modal-body {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.modal-photo {
+  width: 200px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.modal-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #777777;
+  letter-spacing: 1px;
+}
+
+.modal-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.modal-bio {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444444;
+  margin: 0.5rem 0;
+}
+
+/* Ficha técnica (Facts) */
+.modal-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #eeeeee;
+}
+
+.fact-item {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.fact-label {
+  font-weight: bold;
+  color: #333333;
+  min-width: 95px;
+}
+
+.fact-value {
+  color: #555555;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #888888;
 }
 
 .modal-overlay.open{
