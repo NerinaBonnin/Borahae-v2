@@ -539,13 +539,17 @@ section{
 
 /* ─── MEMBERS ─── */
 #members{
-  background:var(--blush)
+  background:var(--blush);
+  padding-top: 5rem; /* Ajusta según el alto de tu barra de navegación */
+  padding-bottom: 10rem;
 }
 
 .members-grid{
-  display:grid;
-  grid-template-columns:repeat(7,1fr);
-  gap:1rem
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  gap: 1rem; /* Espacio/separación entre tarjetas */
+  max-width: 5000px;
+  margin: 0 auto;
 }
 
 .member-card{
