@@ -15,8 +15,10 @@ export function Integrantes() {
     };
 
     // activando favoritos
+    // definimos una constate que tiene como variable "favoritos" y como funcion "setFavoritos" que da como resultado la herramienta useState con un array vacio
     const [favoritos, setFavoritos] = useState([]);
 
+    // es una constante para poder identificar que id de los integrantes estan seleccionados como favoritos y cuales no
     const toggleFav = (id) => {
         if (favoritos.includes(id)){
             return setFavoritos(favoritos.filter(item => item !== id));
