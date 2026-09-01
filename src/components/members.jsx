@@ -14,9 +14,18 @@ export function Integrantes() {
         setSelectedMember(null);
     };
 
-    const toggleFav = (nombre) => {
-        console.log('Diste favorito a:', nombre);
+    // activando favoritos
+    const [favoritos, setFavoritos] = useState([]);
+
+    const toggleFav = (id) => {
+        if (favoritos.includes(id)){
+            return setFavoritos(favoritos.filter(item => item !== id));
+        }
+        else{
+            return setFavoritos([...favoritos, id]);
+        }
     };
+
 
     // 3. RENDERIZADO (RETURN)
     return (
@@ -43,7 +52,7 @@ export function Integrantes() {
                             toggleFav(miembro.nombre);
                         }}
                         >
-                        ♡
+                        {favoritos.includes(miembro.id) ? "♥" : "♡"}
                         </button>
                         <span className="member-avatar-initial">{miembro.inicial}</span>
                         <span className="member-name-overlay">{miembro.nombre}</span>
@@ -53,7 +62,7 @@ export function Integrantes() {
                 ))}
             </div>
 
-      {/* EL MODAL VA ACÁ AL FINAL, DENTRO DEL RETURN Y DE LA SECCIÓN */}
+        {/* EL MODAL VA ACÁ AL FINAL, DENTRO DEL RETURN Y DE LA SECCIÓN */}
         {selectedMember && (
             <div className="modal-overlay" onClick={closeModal}>
                 <div className="modal-content" onClick={(e) => e.stopPropagation()}>
