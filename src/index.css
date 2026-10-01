@@ -427,7 +427,6 @@ nav{
 
 .hero-title span{
   color:var(--accent);
-  font-style:italic
 }
 
 .hero-desc{
@@ -869,6 +868,46 @@ section{
 }
 .a6{
   background:linear-gradient(135deg,#1a1a3a,#2d2d6a)
+}
+
+/* 1. Definimos la grilla para los álbumes */
+.albums-grid,
+.solo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el ancho de cada tarjeta */
+  gap: 20px; /* Espacio entre cada álbum */
+  padding: 20px 0;
+}
+
+/* 2. Contenedor de cada tarjeta */
+.album-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* 3. LIMITAR EL TAMAÑO DE LA IMAGEN (Esto soluciona lo gigante) */
+.album-cover {
+  width: 100%;
+  max-width: 320px; /* Tamaño máximo deseado */
+  aspect-ratio: 1 / 1; /* Mantiene la portada perfectamente cuadrada */
+  object-fit: cover;
+  border-radius: 8px; /* Opcional: bordes ligeramente redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra elegante */
+  transition: transform 0.2s ease;
+}
+
+.album-cover:hover {
+  transform: scale(1.04); /* Efecto hover al pasar el mouse */
+}
+
+/* 4. Estilo para el nombre debajo del álbum */
+.album-name {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
 }
 
 /* ─── GALLERY ─── */
