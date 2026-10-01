@@ -1,7 +1,7 @@
 export const membersData = [
     {
         id: "Rm",
-        nombre: "RM",
+        nombre: "Rm",
         rol: "Líder · Rapero",
         color:"linear-gradient(135deg,#C9B8B0,#9E8A82)",
         bio: "Kim Namjoon, conocido como RM, es el líder y rapero principal de BTS. Aprendió inglés de forma autodidacta y es el principal comunicador del grupo en el exterior, además de ser reconocido como artista y poeta solista. Estudió arte y filosofía, lo que se refleja frecuentemente en sus letras.",
@@ -10,7 +10,7 @@ export const membersData = [
             "Nombre real": "Kim Namjoon",
             "Nacimiento": "12 sep, 1994",
             "Origen": "Ilsan, Corea del Sur",
-            "Solista": "Indigo (2022) y Right Place, Wrong Person (2024)"
+            "Line": "Rap Line"
         }
     },
     {
@@ -24,7 +24,7 @@ export const membersData = [
             "Nombre real": "Kim Seokjin",
             "Nacimiento": "4 dic, 1992",
             "Origen": "Gwacheon, Corea del Sur",
-            "Solista": "The Astronaut (2022), Happy (2024) y Echo (2025)",
+            "Line": "Vocal line"
         }
     },
     {
@@ -38,7 +38,7 @@ export const membersData = [
             "Nombre real": "Min Yoongi",
             "Nacimiento": "9 mar, 1993",
             "Origen": "Daegu, Corea del Sur",
-            "Solista": "Agust D (2016), D-2 (2020) y D-Day (2023)",
+            "Line": "Rap Line"
         }
     },
     {
@@ -52,7 +52,7 @@ export const membersData = [
             "Nombre real": "Jung Hoseok",
             "Nacimiento": "18 feb, 1994",
             "Origen": "Gwangju, Corea del Sur",
-            "Solista": "Hope World (2018), Jack in the Box (2022) y HOPE ON THE STREET VOL.1 (2024)",
+            "Line": "Rap Line y main dance"
         }
     },
     {
@@ -66,7 +66,7 @@ export const membersData = [
             "Nombre real": "Park Jimin",
             "Nacimiento": "13 oct, 1995",
             "Origen": "Busan, Corea del Sur",
-            "Solista": "Face (2023) y Muse (2024)",
+            "Line": "Vocal line"
         }
     },
     {
@@ -80,7 +80,7 @@ export const membersData = [
             "Nombre real": "Kim Taehyung",
             "Nacimiento": "30 dic, 1995",
             "Origen": "Daegu, Corea del Sur",
-            "Solista": "Layover (2023)"
+            "Line": "Vocal line"
         }
     },
     {
@@ -94,7 +94,7 @@ export const membersData = [
             "Nombre real": "Jeon JungKook",
             "Nacimiento": "1 sep, 1997",
             "Origen": "Busan, Corea del Sur",
-            "Solista": "Golden (2023)"
+            "Line": "vocal line"
         }
     }
 ]
