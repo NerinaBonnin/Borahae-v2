@@ -760,23 +760,25 @@ section{
 }
 
 .album-year-tag{
-  font-size:.65rem;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  color:var(--accent)
-  ;margin-bottom:.2rem
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+  display: block;
 }
 
 .album-name{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.15rem;
-  color:var(--text);
-  margin-bottom:.2rem
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  color: var(--text);
+  margin-bottom: 0.2rem;
 }
 
 .album-type-tag{
-  font-size:.72rem;
-  color:var(--muted)
+  font-size: 0.72rem;
+  color: var(--muted);
+  display: block;
 }
 
 .solo-card{
@@ -908,6 +910,175 @@ section{
   font-size: 0.9rem;
   font-weight: 500;
   color: #333;
+}
+
+/* VENTANA EMERGENTE DE DISCOGRAPHY */
+/* Fondo oscuro detrás del modal */
+.album-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Contenedor principal de la ventana */
+.album-modal-content {
+  background: #ffffff;
+  width: 100%;
+  max-width: 750px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 4px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de cerrar (la X) */
+.close-modal-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.close-modal-btn:hover {
+  background: #f0f0f0;
+}
+
+/* Cabecera del modal */
+.modal-header-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.modal-album-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.modal-album-type {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.modal-info-header h2 {
+  font-size: 2.2rem;
+  margin: 5px 0 20px 0;
+  font-family: serif; /* O la tipografía elegante que uses */
+  color: #222;
+}
+
+/* Metadatos (Lanzamiento, Sello, etc.) */
+.modal-meta-grid {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.meta-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-label {
+  font-size: 0.65rem;
+  color: #999;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+
+.meta-value {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.modal-divider {
+  border: none;
+  border-top: 1px solid #eaeaea;
+  margin: 25px 0;
+}
+
+/* Historia */
+.modal-story-section h3,
+.modal-tracks-section h3 {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.modal-story-section p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Lista de canciones idéntica a la primera foto */
+.tracklist{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.track-item{
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 1rem;
+}
+
+.track-num{
+  color: var(--mauve);
+  min-width: 24px;
+  text-align: right;
+  font-size: 0.85rem;
+}
+
+.track-name{
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.track-duration{
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Tipografía elegante para el título del modal */
+.album-modal-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1;
+  margin: 5px 0 20px 0;
 }
 
 /* ─── GALLERY ─── */
