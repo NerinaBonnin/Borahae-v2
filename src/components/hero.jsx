@@ -7,7 +7,7 @@ export function Hero(){
                 <p className="hero-desc">Siete voces. Un universo. Desde 2013, BTS redefinió lo que significa ser artistas — hablándole a una generación a través de la música, la autenticidad y el amor.</p>
                 <div className="hero-btns">
                     <a href="#members" className="btn">Conocé a los integrantes</a>
-                    <a href="#journey" className="btn btn-accent">Mi Viaje con BTS</a>
+                    <a href="#journey" className="btn btn-accent">Mis Favoritos</a>
                 </div>
             </div>
             <div className="hero-visual fade-in">
