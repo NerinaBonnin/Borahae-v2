@@ -3202,3 +3202,107 @@ footer p{
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 991px) {
+  /* 1. Ocultar la foto en el modal móvil */
+  .modal-image-container,
+  .modal-body .modal-photo {
+    display: none !important;
+  }
+
+  /* 2. Asegurar que el modal se adapte bien al celular y tenga scroll si es largo */
+  .modal-content, .modal {
+    padding: 1.5rem !important;
+    width: 92% !important;
+    max-width: 400px !important;
+    max-height: 85vh !important;
+    overflow-y: auto !important;
+    margin: auto;
+  }
+
+  .modal-body {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  /* 3. Forzar que los datos (Nombre real, Nacimiento, Origen, Line) vayan en UNA sola columna vertical */
+  .modal-facts {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+    grid-template-columns: none !important;
+  }
+
+  .fact-item, .modal-fact-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
+
+  .fact-label, .modal-fact-label {
+    min-width: 110px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .fact-value, .modal-fact-value {
+    text-align: right !important;
+  }
+}
+
+@media (max-width: 991px) {
+  /* 1. Ocultar la portada del álbum en el modal móvil */
+  .album-modal-cover,
+  .modal-album-img {
+    display: none !important;
+  }
+
+  /* 2. Adaptar la estructura superior del modal para que sea vertical */
+  .album-modal-header,
+  .modal-header-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  /* 3. Asegurar tamaño y desplazamiento correcto del modal de álbumes */
+  .album-modal, .album-modal-content {
+    width: 92% !important;
+    max-width: 420px !important;
+    max-height: 85vh !important;
+    overflow-y: auto !important;
+    padding: 1.5rem !important;
+    margin: auto;
+  }
+
+  .album-modal-info, .modal-info-header {
+    padding: 0 !important;
+  }
+
+  /* 4. Organizar la grilla de metadatos (Lanzamiento, Sello, etc.) en formato vertical limpio */
+  .modal-meta-grid, .album-modal-meta {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.6rem !important;
+  }
+
+  .meta-column, .album-modal-meta-item {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+  }
+
+  .meta-label, .album-modal-meta-label {
+    min-width: 100px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .meta-value, .album-modal-meta-value {
+    text-align: right !important;
+  }
+}
+
