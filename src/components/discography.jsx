@@ -1,7 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import * as discographyData from "../data/discography.js";
 
 export function Discography() {
+    // 1. Inicializar favoritos de álbumes desde localStorage
+    const [favoriteAlbums, setFavoriteAlbums] = useState(() => {
+        const saved = localStorage.getItem("borahae_favorite_albums");
+        return saved ? JSON.parse(saved) : [];
+    });
+
+    // 2. Guardar cada vez que cambien los álbumes favoritos
+    useEffect(() => {
+        localStorage.setItem("borahae_favorite_albums", JSON.stringify(favoriteAlbums));
+    }, [favoriteAlbums]);
+
+    // 3. Función para agregar o quitar un álbum de favoritos
+    const toggleFavoriteAlbum = (albumId) => {
+        if (favoriteAlbums.includes(albumId)) {
+            setFavoriteAlbums(favoriteAlbums.filter((id) => id !== albumId));
+        } else {
+            setFavoriteAlbums([...favoriteAlbums, albumId]);
+        }
+    }
+    
     // Estado para saber qué pestaña está activa ('group' o 'solo')
     const [activeTab, setActiveTab] = useState("group");
 
@@ -48,6 +68,7 @@ export function Discography() {
             </div>
 
             {/* Grilla dinámica según la pestaña activa */}
+            {/* Grilla dinámica según la pestaña activa */}
             <div className="disc-panel active" id="panel-group">
                 <div className="albums-grid fade-in" id="group-grid">
                     {currentCovers.map(([key, src]) => {
@@ -59,11 +80,35 @@ export function Discography() {
                                 onClick={() => setSelectedAlbumKey(key)}
                                 style={{ cursor: 'pointer' }}
                             >
-                                <img src={src} alt={key} className="album-cover" />
-                                <div className="album-card-info" style={{ textAlign: 'left', width: '100%', marginTop: '8px' }}>
-                                    <span className="album-year-tag">{albumInfo.meta?.Lanzamiento || albumInfo.meta?.['Lanzamiento'] || ''}</span>
-                                    <p className="album-name">{albumInfo.title || key}</p>
-                                    <span className="album-type-tag">{albumInfo.type || ''}</span>
+                                {/* Contenedor de la portada con el botón del corazón flotante */}
+                                <div style={{ position: 'relative' }}>
+                                    <img src={src} alt={key} className="album-cover" />
+                                    <button
+                                        className="album-fav-btn"
+                                        onClick={(e) => {
+                                            e.stopPropagation(); 
+                                            toggleFavoriteAlbum(key);
+                                        }}
+                                    >
+                                        <span className={`fav-heart ${favoriteAlbums.includes(key) ? "active" : ""}`}>
+                                            {favoriteAlbums.includes(key) ? "♥" : "♡"}
+                                        </span>
+                                    </button>
+                                </div>
+
+                                {/* Información del álbum abajo */}
+                                <div className="album-card-info" style={{ textAlign: 'left', width: '100%', marginTop: '8px', marginBottom: '20px' }}>
+                                    <span className="album-year-tag" style={{ fontSize: '0.8rem', fontWeight: 600 }}>
+                                        {albumInfo.meta?.Lanzamiento || albumInfo.meta?.['Lanzamiento'] || ''}
+                                    </span>
+                                    
+                                    <h3 className="album-name" style={{ fontSize: '1.6rem', fontWeight: 'bold', margin: '3px 0', lineHeight: 1.2 }}>
+                                        {albumInfo.title || key}
+                                    </h3>
+                                    
+                                    <span className="album-type-tag" style={{ fontSize: '0.85rem' }}>
+                                        {albumInfo.type || ''}
+                                    </span>
                                 </div>
                             </div>
                         );

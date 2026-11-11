@@ -48,18 +48,19 @@ body{
 
 /* ─── NAV ─── */
 nav{
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  z-index:200;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:1rem 3rem;
-  background:rgba(250,248,244,0.88);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--border);
-  transition:background .3s
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: rgba(250,248,244,0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: background .3s;
 }
 
 [data-theme="dark"] nav{
@@ -164,247 +165,15 @@ nav{
   padding-bottom:1rem
 }
 
-/* ─── SEARCH BAR ─── */
-.search-overlay{
-  display:none;
-  position:fixed;
-  inset:0;
-  z-index:300;
-  background:rgba(60,47,42,.8);
-  backdrop-filter:blur(6px);
-  align-items:flex-start;
-  justify-content:center;
-  padding-top:8rem
-}
-
-.search-overlay.open{
-  display:flex
-}
-
-.search-box{
-  background:var(--card);
-  border-radius:8px;
-  padding:2rem;
-  width:90%;
-  max-width:600px;
-  box-shadow:0 20px 60px rgba(0,0,0,.2)
-}
-
-.search-input-wrap{
-  display:flex;
-  gap:1rem;
-  align-items:center;
-  border-bottom:1px solid var(--border);
-  padding-bottom:1rem;
-  margin-bottom:1.5rem
-}
-
-.search-input{
-  flex:1;
-  border:none;
-  background:none;
-  font-size:1.2rem;
-  color:var(--text);
-  font-family:'DM Sans',sans-serif;
-  outline:none
-}
-
-.search-input::placeholder{
-  color:var(--muted)
-}
-
-.search-close{
-  background:none;
-  border:none;
-  cursor:pointer;
-  font-size:1.3rem;
-  color:var(--muted)
-}
-
-.search-results{
-  max-height:300px;
-  overflow-y:auto
-}
-
-.search-result-item{
-  padding:.7rem 0;
-  border-bottom:1px solid var(--border);
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  gap:1rem;
-  transition:background .2s;
-  border-radius:4px;
-  padding-left:.5rem
-}
-
-.search-result-item:hover{
-  background:var(--surface)
-}
-
-.search-result-tag{
-  font-size:.65rem;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-  color:var(--accent);
-  min-width:60px
-}
-
-.search-result-name{
-  font-size:.9rem;
-  color:var(--text)
-}
-
-.search-empty{
-  font-size:.9rem;
-  color:var(--muted);
-  text-align:center;
-  padding:2rem
-}
-
-/* ─── MINI PLAYER ─── */
-.mini-player{
-  position:fixed;
-  bottom:1.5rem;
-  right:1.5rem;
-  z-index:190;
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:1rem 1.2rem;
-  width:280px;
-  box-shadow:0 8px 32px rgba(0,0,0,.15);
-  transition:all .3s
-}
-
-.mini-player.hidden{
-  transform:translateY(120%);
-  opacity:0;
-  pointer-events:none
-}
-
-.player-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:.8rem
-}
-
-.player-title{
-  font-size:.65rem;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-  color:var(--accent)
-}
-
-.player-close-btn{
-  background:none;
-  border:none;
-  cursor:pointer;
-  color:var(--muted);
-  font-size:.9rem
-}
-
-.player-track{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1rem;
-  color:var(--text);
-  margin-bottom:.3rem;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis
-}
-
-.player-artist{
-  font-size:.75rem;
-  color:var(--muted);
-  margin-bottom:.8rem
-}
-
-.player-controls{
-  display:flex;
-  gap:.6rem;
-  align-items:center;
-  justify-content:center;
-  margin-bottom:.8rem
-}
-
-.player-btn{
-  background:none;
-  border:none;
-  cursor:pointer;
-  color:var(--muted);
-  font-size:1.1rem;
-  transition:color .2s;
-  padding:.3rem
-}
-
-.player-btn:hover{
-  color:var(--accent)
-}
-
-.player-btn.play{
-  background:var(--deep);
-  color:var(--cream);
-  border-radius:50%;
-  width:36px;
-  height:36px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:.9rem
-}
-
-[data-theme="dark"] .player-btn.play{
-  background:var(--accent)
-}
-
-.player-progress{
-  height:3px;
-  background:var(--border);
-  border-radius:2px;
-  overflow:hidden;
-  cursor:pointer
-}
-
-.player-progress-bar{
-  height:100%;
-  background:var(--accent);
-  width:0%;
-  transition:width .1s linear
-}
-
-.player-toggle{
-  position:fixed;
-  bottom:1.5rem;
-  right:1.5rem;
-  z-index:189;
-  background:var(--deep);
-  color:var(--cream);
-  border:none;
-  border-radius:50%;
-  width:44px;
-  height:44px;
-  cursor:pointer;
-  font-size:1.1rem;
-  display:none;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 4px 16px rgba(0,0,0,.2)
-}
-
-.player-toggle.visible{
-  display:flex
-}
 
 /* ─── HERO ─── */
 .hero{
-  min-height:100vh;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  padding:5rem 4rem 4rem;
-  gap:4rem
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 6rem 4rem 3rem 4rem !important; 
+  gap: 4rem;
 }
 
 .hero-tag{
@@ -759,26 +528,51 @@ section{
   z-index:1
 }
 
+.album-card-info {
+  text-align: left;
+  width: 100%;
+  margin-top: 6px;       
+  margin-bottom: 24px;   
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}              
+
 .album-year-tag{
-  font-size: 0.65rem;
+  font-size: 0.30rem;
+  font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 0.2rem;
   display: block;
+  color: var(--accent) !important;
 }
 
 .album-name{
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem;
+  font-size: 0.10rem;
   color: var(--text);
+  color: var(--text) !important;
   margin-bottom: 0.2rem;
+  line-height: 1.25;
 }
 
 .album-type-tag{
-  font-size: 0.72rem;
+  font-size: 0.79rem ;
   color: var(--muted);
   display: block;
+  color: var(--muted) !important;
+}
+
+.album-card-info p.album-name,
+.album-card-info h3.album-name {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: var(--text) !important;
+  margin: 3px 0 !important;
+  line-height: 1.2 !important;
 }
 
 .solo-card{
@@ -872,16 +666,13 @@ section{
   background:linear-gradient(135deg,#1a1a3a,#2d2d6a)
 }
 
-/* 1. Definimos la grilla para los álbumes */
-.albums-grid,
-.solo-grid {
+.albums-grid, .solo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el ancho de cada tarjeta */
   gap: 20px; /* Espacio entre cada álbum */
   padding: 20px 0;
 }
 
-/* 2. Contenedor de cada tarjeta */
 .album-card {
   display: flex;
   flex-direction: column;
@@ -889,7 +680,6 @@ section{
   text-align: center;
 }
 
-/* 3. LIMITAR EL TAMAÑO DE LA IMAGEN (Esto soluciona lo gigante) */
 .album-cover {
   width: 100%;
   max-width: 320px; /* Tamaño máximo deseado */
@@ -904,7 +694,6 @@ section{
   transform: scale(1.04); /* Efecto hover al pasar el mouse */
 }
 
-/* 4. Estilo para el nombre debajo del álbum */
 .album-name {
   margin-top: 8px;
   font-size: 0.9rem;
@@ -912,8 +701,49 @@ section{
   color: #333;
 }
 
+/* Botón de favorito flotante en la portada del álbum */
+/* Botón flotante */
+.album-fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  z-index: 2;
+  padding: 0;
+}
+
+.album-fav-btn:hover {
+  transform: scale(1.15);
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* Corazón centrado a la fuerza */
+.fav-heart {
+  font-size: 1.1rem;
+  line-height: 1;
+  display: inline-block;
+  margin-top: 1px; 
+  margin-left: 0.5px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.fav-heart.active {
+  color: rgb(107, 23, 136);
+  transform: scale(1.2);
+}
+
 /* VENTANA EMERGENTE DE DISCOGRAPHY */
-/* Fondo oscuro detrás del modal */
+
 .album-modal-overlay {
   position: fixed;
   top: 0;
@@ -931,6 +761,8 @@ section{
 
 /* Contenedor principal de la ventana */
 .album-modal-content {
+  background: var(--card) !important; 
+  color: var(--text) !important;
   background: #ffffff;
   width: 100%;
   max-width: 750px;
@@ -942,7 +774,14 @@ section{
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Botón de cerrar (la X) */
+.album-modal-content h2, .album-modal-content h3, .modal-content h2, .modal-content h3, .modal-story-section p, .modal-bio, .track-name, .fact-value, .fact-label {
+  color: var(--text) !important;
+}
+
+.modal-album-type, .track-duration, .meta-label, .album-modal-meta-label {
+  color: var(--muted) !important;
+}
+
 .close-modal-btn {
   position: absolute;
   top: 20px;
@@ -1023,8 +862,7 @@ section{
 }
 
 /* Historia */
-.modal-story-section h3,
-.modal-tracks-section h3 {
+.modal-story-section h3, .modal-tracks-section h3 {
   font-size: 0.75rem;
   letter-spacing: 1.5px;
   color: #888;
@@ -1035,6 +873,10 @@ section{
   color: #555;
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+.modal-story-section p, .track-name {
+  color: var(--text) !important; 
 }
 
 /* Lista de canciones idéntica a la primera foto */
@@ -1717,35 +1559,6 @@ button, p{
   margin-bottom:.4rem
 }
 
-/* RESPONSIVE ARMY */
-@media(max-width:768px){
-  .army-acronym-block{
-    grid-template-columns:1fr;
-    gap:1.5rem
-  }
-  .army-letter-stack{
-    flex-direction:row;
-    gap:1rem
-  }
-  .army-letter{
-    font-size:2.5rem
-  }
-  .army-acronym-right{
-    border-left:none;
-    border-top:1px solid var(--border);
-    padding-left:0;
-    padding-top:1.5rem
-  }
-  .army-stats-row{
-    grid-template-columns:repeat(2,1fr)
-  }
-  .army-voices-grid{
-    grid-template-columns:1fr
-  }
-  .avc-large{
-    grid-row:span 1
-  }
-}
 
 
 /* ─── CALENDAR ─── */
@@ -2515,22 +2328,6 @@ button, p{
 .bu-dot-media{ background:var(--accent2) }
 .bu-dot-loop{ background:#9a6ab0 }
 
-/* RESPONSIVE */
-@media(max-width:900px){
-  .bu-explorer{
-    grid-template-columns:1fr
-  }
-  .bu-map{
-    height:360px
-  }
-  .bu-detail{
-    min-height:auto
-  }
-  .bu-media-grid{
-    grid-template-columns:1fr
-  }
-}
-
 
 /* ─── MY JOURNEY ─── */
 #journey{
@@ -2743,6 +2540,21 @@ button, p{
 }
 
 .modal-content {
+  background-color: var(--card) !important; 
+  color: var(--text) !important;         
+}
+
+.modal-content .modal-title, .modal-content .modal-bio, .modal-content .fact-value, .modal-content .fact-label {
+  color: var(--text) !important;
+}
+
+.modal-content .modal-tag {
+  color: var(--muted) !important;
+}
+
+.modal-content {
+  background-color: var(--card); 
+  color: var(--text);
   background-color: #ffffff;
   border-radius: 16px;
   max-width: 680px;
@@ -2786,6 +2598,7 @@ button, p{
 }
 
 .modal-bio {
+  color: var(--text) !important;
   font-size: 0.9rem;
   line-height: 1.5;
   color: #444444;
@@ -2809,12 +2622,14 @@ button, p{
 }
 
 .fact-label {
+  color: var(--text);
   font-weight: bold;
   color: #333333;
   min-width: 95px;
 }
 
 .fact-value {
+  color: var(--text);
   color: #555555;
 }
 
@@ -3034,6 +2849,24 @@ button, p{
   color:var(--muted)
 }
 
+.modal-meta-grid .meta-value {
+  color: var(--text) !important;
+}
+
+/* Etiquetas superiores de los metadatos */
+.modal-meta-grid .meta-label {
+  color: var(--muted) !important;
+}
+
+/* Título y tipo de álbum en la cabecera */
+.album-modal-title {
+  color: var(--text) !important;
+}
+
+.modal-album-type {
+  color: var(--accent) !important;
+}
+
 .tracklist{
   list-style:none
 }
@@ -3137,95 +2970,6 @@ footer .logo{
 
 footer p{
   font-size:.78rem
-}
-
-/* ─── RESPONSIVE ─── */
-@media(max-width:1024px){
-  section{
-    padding:4rem 2.5rem
-  }
-
-  .hero{
-    padding:7rem 2.5rem 3rem
-  }
-
-  .awards-stats{
-    grid-template-columns:repeat(2,1fr)
-  }
-}
-
-@media(max-width:768px){
-  nav{
-    padding:1rem 1.5rem
-  }
-  .nav-links{
-    display:none
-  }
-  .hamburger{
-    display:flex
-  }
-  .hero{
-    grid-template-columns:1fr;
-    padding:6rem 1.5rem 3rem
-  }
-  .hero-visual{
-    display:none
-  }
-  section{
-    padding:3.5rem 1.5rem
-  }
-  .members-grid{
-    grid-template-columns:repeat(4,1fr)
-  }
-  .gallery-grid{
-    grid-template-columns:1fr 1fr
-  }
-  .gallery-item{
-    grid-column:span 1!important;
-    grid-row:span 1!important
-  }
-  .journey-container{
-    grid-template-columns:1fr
-  }
-  .album-modal-header{
-    grid-template-columns:1fr
-  }
-  .album-modal-cover{
-    min-height:150px;
-    border-radius:6px 6px 0 0
-  }
-  footer{
-    flex-direction:column;
-    text-align:center;
-    padding:2rem 1.5rem
-  }
-  .awards-stats{
-    grid-template-columns:repeat(2,1fr)
-  }
-  .mini-player{
-    width:calc(100% - 3rem);
-    right:1.5rem;
-    left:1.5rem
-  }
-}
-
-@media(max-width:480px){
-  .members-grid{
-    grid-template-columns:repeat(4,1fr)
-  }
-  .hero-btns{
-    flex-direction:column
-  }
-  .member-picker{
-    grid-template-columns:repeat(4,1fr)
-  }
-
-  .albums-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .solo-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 
@@ -3360,4 +3104,101 @@ footer p{
 }
 .bu-mv-item:hover .bu-mv-icon{
   transform:scale(1.3)
+}
+
+/* ==========================================
+        DISEÑO RESPONSIVO CON MEDIA QUERIES
+   ========================================== */
+
+/* Tablets y Celulares (menores a 991px) */
+@media (max-width: 991px) {
+  /* 1. Menú flotante desplegable */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--card, #1a1a1a);
+    padding: 1.5rem 1rem;
+    gap: 1.2rem;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  /* 2. Un único botón Hamburguesa visible con sus 3 líneas */
+  .hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-left: 0.5rem;
+    z-index: 1001;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text, #3C2F2A) !important;
+    border-radius: 2px;
+  }
+
+  /* 3. Hero centrado, sin círculo y con buen margen hacia Integrantes */
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 6rem 1.5rem 2rem 1.5rem !important; /* Subimos de 6rem a 8rem para darle más espacio arriba */
+    min-height: auto !important;
+    margin-bottom: 2.5rem !important;
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+
+  .hero-visual {
+    display: none !important;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-btns {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  /* 4. Grilla de Integrantes adaptada */
+  .members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+  }
+}
+
+/* Celulares pequeños (menores a 576px) */
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .members-grid, .albums-grid {
+    grid-template-columns: 1fr;
+  }
 }
