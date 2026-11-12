@@ -1002,84 +1002,6 @@ section{
   line-height:1.7
 }
 
-/* ─── AWARDS ─── */
-#awards{
-  background:var(--blush)
-}
-
-.awards-stats{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:1.5rem;
-  margin-bottom:3rem
-}
-
-.stat-card{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:6px;
-  padding:1.5rem;
-  text-align:center
-}
-
-.stat-num{
-  font-family:'Cormorant Garamond',serif;
-  font-size:3rem;
-  font-weight:300;
-  color:var(--accent);
-  line-height:1
-}
-
-.stat-label{
-  font-size:.7rem;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-  color:var(--muted);
-  margin-top:.4rem
-}
-
-.awards-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-  gap:1rem
-}
-
-.award-card{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:4px;
-  padding:1.2rem;
-  display:flex;
-  gap:1rem;
-  align-items:flex-start
-}
-
-.award-icon{
-  font-size:1.5rem;
-  flex-shrink:0;
-  margin-top:.1rem
-}
-
-.award-year{
-  font-size:.62rem;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin-bottom:.2rem
-}
-
-.award-name{
-  font-size:.88rem;
-  font-weight:500;
-  color:var(--text);
-  margin-bottom:.2rem
-}
-
-.award-show{
-  font-size:.78rem;
-  color:var(--muted)
-}
-
 /* ─── IMPACT ─── */
 #sound-impact{
   padding: 60px 20px;
@@ -1096,7 +1018,6 @@ section{
 button, p{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 
 .sound-grid button{
   padding: 1rem;
