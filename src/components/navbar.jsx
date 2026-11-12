@@ -25,8 +25,8 @@ export function Navbar() {
                 <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
                     <li><a href="#members" onClick={() => setIsMenuOpen(false)}>Integrantes</a></li>
                     <li><a href="#discography" onClick={() => setIsMenuOpen(false)}>Discografía</a></li>
-                    <li><a href="#performances" onClick={() => setIsMenuOpen(false)}>Actuaciones</a></li>
-                    <li><a href="#awards" onClick={() => setIsMenuOpen(false)}>Premios</a></li>
+                    <li><a href="#performances" onClick={() => setIsMenuOpen(false)}>Presentaciones</a></li>
+                    <li><a href="#experience" onClick={() => setIsMenuOpen(false)}>Sonoras</a></li>
                     <li><a href="#army" onClick={() => setIsMenuOpen(false)}>ARMY</a></li>
                     <li><a href="#calendar" onClick={() => setIsMenuOpen(false)}>Calendario</a></li>
                     <li><a href="#lyrics" onClick={() => setIsMenuOpen(false)}>Letras</a></li>
