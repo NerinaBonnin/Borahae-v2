@@ -3,7 +3,8 @@ import { Hero } from "./components/hero";
 import { Integrantes } from "./components/members";
 import { Discography } from "./components/discography";
 import {Performance} from "./components/performances";
-import { ExperienciaSonora } from "./components/experiencia"; 
+import { ExperienciaSonora } from "./components/experiencias";
+import { Army } from "./components/army"; 
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Discography />
             <Performance />
             <ExperienciaSonora />
+            <Army />
         </div>
     );
 }

@@ -3149,3 +3149,49 @@ footer p{
     margin: 0 auto;
   }
 }
+
+/* ARMY RESPONSIVE */
+@media (max-width: 991px) {
+  .army-section {
+    padding: 3rem 1rem !important;
+  }
+
+  .army-acronym-block {
+    flex-direction: column !important;
+    padding: 1.5rem !important;
+    gap: 2rem !important;
+  }
+
+  .army-letter-stack {
+    flex-direction: row !important;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .army-letter {
+    width: 55px;
+    height: 55px;
+    font-size: 1.5rem;
+  }
+
+  .army-acronym-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .army-stats-row {
+    grid-template-columns: 1fr 1fr !important; /* Dos columnas en pantallas medianas/móviles grandes */
+    gap: 1rem !important;
+  }
+
+  .army-impact-track {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .army-stats-row {
+    grid-template-columns: 1fr !important; /* Una sola columna en celulares pequeños */
+  }
+}
