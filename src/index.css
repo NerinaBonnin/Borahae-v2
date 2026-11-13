@@ -1565,6 +1565,35 @@ button, p{
 }
 
 /* LYRIC MODAL */
+.lyric-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.lyric-modal {
+  background: #ffffff;
+  color: #2b211c;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 700px; /* <--- Aumentamos el ancho máximo aquí (antes era 480px) */
+  max-height: 92vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
 .lyric-modal-overlay {
   display: none; 
   position: fixed; 
@@ -1593,26 +1622,27 @@ button, p{
 }
 
 .lyric-modal-close {
-  position: absolute; 
-  top: .9rem; 
-  right: .9rem; 
-  z-index: 10;
-  background: rgba(0,0,0,.45); 
-  color: white; 
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(0, 0, 0, 0.5);
   border: none;
-  border-radius: 50%; 
-  width: 32px; 
-  height: 32px; 
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.3rem;
   cursor: pointer;
-  font-size: .85rem; 
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: center;
-  transition: background .2s;
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 10;
 }
 
-.lyric-modal-close:hover { 
-  background: rgba(0,0,0,.75); 
+.lyric-modal-close:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
 }
 
 .lyric-modal-img {
@@ -1660,6 +1690,27 @@ button, p{
   margin-top: .1rem;
 }
 
+.lyric-modal-card-preview {
+  width: 100%;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.lyric-modal-card-preview img {
+  width: 100%;
+  max-width: 300px; /* <--- Ajustado para que la tarjeta de la frase también se expanda con el modal */
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  display: block;
+}
+
 .lyric-spotify-btn {
   display: inline-flex; 
   align-items: center; 
@@ -1690,15 +1741,150 @@ button, p{
   padding-left: .3rem;
 }
 
-@media(max-width: 480px) {
-  .lyrics-grid { 
-    grid-template-columns: 1fr; 
-  }
+.lyric-modal-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  background: #ffffff;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
 
-  .lyric-modal-song-row { 
-    flex-direction: column; 
-    align-items: flex-start; 
-  }
+.lm-quote-text {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.45;
+  color: #2b211c;
+  margin: 0;
+}
+
+.lm-song-box {
+  background: #f5efe6;
+  border: 1px solid #e6dccf;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.lmsb-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.lmsb-song {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #2b211c;
+}
+
+.lmsb-artist {
+  font-size: 0.85rem;
+  color: #7a6b60;
+}
+
+.lm-spotify-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #1DB954;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.lm-spotify-btn:hover {
+  background: #1aa34a;
+  transform: translateY(-1px);
+}
+
+.lm-album-tag {
+  font-size: 0.85rem;
+  color: #8c7b6f;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* ─── ESTILOS PARA EL BOTÓN DE FAVORITO (CORAZÓN) ─── */
+.lyric-card {
+  position: relative; /* Necesario para que el corazón se posicione respecto a la tarjeta */
+}
+
+.fav-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px; /* Lo ubicamos prolijamente arriba a la derecha */
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  border: none;
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+.fav-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+  transform: scale(1.1);
+}
+
+.fav-btn.active {
+  color: rgb(107, 23, 136); /* Color rojo/rosa vibrante cuando está marcado como favorito */
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* Posición específica para el corazón dentro del modal */
+.lyric-modal .fav-btn.modal-fav {
+  right: 65px; /* Para que no se encime con la cruz de cerrar */
+  top: 14px;
+}
+
+#lyrics {
+  #lyrics {
+  width: 100%;
+  max-width: 1400px; /* Ampliamos el ancho máximo para aprovechar mejor la pantalla */
+  margin: 0 auto;
+  padding: 5rem 4%;    /* Usamos porcentajes para que el margen lateral sea flexible y estético */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+}
+
+.lyrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Columnas automáticas y adaptables */
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lyric-card {
+  width: 100%;
+  min-width: 0; /* Evita que el contenido interno empuje el ancho de la tarjeta */
+  box-sizing: border-box;
+}
+
+/* Espacio de seguridad para que la frase no se encime con el botón del corazón */
+.lyric-card-quote {
+  padding-right: 2.5rem;
 }
 
 /* ─── QUOTES ─── */
@@ -3195,3 +3381,82 @@ footer p{
     grid-template-columns: 1fr !important; /* Una sola columna en celulares pequeños */
   }
 }
+
+/* LYRICS RESPONSIVE*/
+
+@media (max-width: 768px) {
+  #lyrics {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .lyrics-grid {
+    grid-template-columns: 1fr; /* Una sola columna fluida que ocupa el 100% disponible */
+    gap: 1.25rem;
+  }
+
+  .lyric-card-inner {
+    padding: 1.4rem;
+  }
+
+  .lyric-card-quote {
+    font-size: 1.15rem;
+    padding-right: 2.6rem;
+  }
+
+  .lyric-card-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Ajustes específicos para celulares pequeños (como la captura de 320px - 480px) */
+@media (max-width: 480px) {
+  #lyrics {
+    padding: 3rem 1rem;
+  }
+
+  #lyrics .section-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  /* Modal adaptado a pantallas chicas */
+  .lyric-overlay {
+    padding: 0.75rem;
+  }
+
+  .lyric-modal {
+    border-radius: 18px;
+    max-height: 90vh;
+  }
+
+  .lyric-modal-card-preview {
+    padding: 2.8rem 1.25rem 1.5rem 1.25rem; /* Deja aire arriba para los botones de cerrar y favorito */
+  }
+
+  .lyric-modal-card-preview img {
+    max-width: 100%;
+  }
+
+  .lyric-modal-info {
+    padding: 1.4rem;
+    gap: 1rem;
+  }
+
+  .lm-quote-text {
+    font-size: 1.15rem;
+  }
+
+  .lm-song-box {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+
+  .lm-spotify-btn {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}
+

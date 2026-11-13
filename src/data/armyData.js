@@ -27,7 +27,7 @@ export const armyAcronymData = [
 ];
 
 export const armyStatsData = [
-    { target: 100, prefix: "", suffix: "", label: "países con fan clubs" },
+    { target: 245, prefix: "", suffix: "", label: "países con fan clubs" },
     { target: 47, prefix: "", suffix: "M+", label: "seguidores en Twitter/X" },
     { target: 1, prefix: "$", suffix: "M", label: "donación igualada a BLM en <24h" },
     { target: 2013, prefix: "", suffix: "", label: "año de fundación" }

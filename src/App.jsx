@@ -4,7 +4,8 @@ import { Integrantes } from "./components/members";
 import { Discography } from "./components/discography";
 import {Performance} from "./components/performances";
 import { ExperienciaSonora } from "./components/experiencias";
-import { Army } from "./components/army"; 
+import { Army } from "./components/army";
+import { Lyrics } from "./components/lyrics"; 
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Performance />
             <ExperienciaSonora />
             <Army />
+            <Lyrics />
         </div>
     );
 }
