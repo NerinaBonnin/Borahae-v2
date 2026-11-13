@@ -28,7 +28,6 @@ export function Navbar() {
                     <li><a href="#performances" onClick={() => setIsMenuOpen(false)}>Presentaciones</a></li>
                     <li><a href="#experience" onClick={() => setIsMenuOpen(false)}>Sonoras</a></li>
                     <li><a href="#army" onClick={() => setIsMenuOpen(false)}>ARMY</a></li>
-                    <li><a href="#calendar" onClick={() => setIsMenuOpen(false)}>Calendario</a></li>
                     <li><a href="#lyrics" onClick={() => setIsMenuOpen(false)}>Letras</a></li>
                     <li><a href="#universe" onClick={() => setIsMenuOpen(false)}>Universo</a></li>
                 </ul>
