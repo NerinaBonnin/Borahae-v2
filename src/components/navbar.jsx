@@ -29,7 +29,7 @@ export function Navbar() {
                     <li><a href="#experience" onClick={() => setIsMenuOpen(false)}>Sonoras</a></li>
                     <li><a href="#army" onClick={() => setIsMenuOpen(false)}>ARMY</a></li>
                     <li><a href="#lyrics" onClick={() => setIsMenuOpen(false)}>Letras</a></li>
-                    <li><a href="#universe" onClick={() => setIsMenuOpen(false)}>Universo</a></li>
+                    <li><a href="#quotes" onClick={() => setIsMenuOpen(false)}>Frases</a></li>
                 </ul>
 
                 <div className="nav-actions">
