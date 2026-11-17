@@ -6,7 +6,8 @@ import {Performance} from "./components/performances";
 import { ExperienciaSonora } from "./components/experiencias";
 import { Army } from "./components/army";
 import { Lyrics } from "./components/lyrics";
-import { Quotes } from "./components/quotes"; 
+import { Quotes } from "./components/quotes";
+import { Eras } from "./components/eras"; 
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Army />
             <Lyrics />
             <Quotes />
+            <Eras />
         </div>
     );
 }

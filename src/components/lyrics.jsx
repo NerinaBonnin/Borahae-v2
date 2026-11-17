@@ -132,10 +132,6 @@ export function Lyrics() {
                                     </a>
                                 )}
                             </div>
-
-                            {selectedLyric.album && (
-                                <div className="lm-album-tag">💿 {selectedLyric.album}</div>
-                            )}
                         </div>
                     </div>
                 </div>
