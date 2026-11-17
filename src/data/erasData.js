@@ -9,7 +9,7 @@ export const erasData = [
         photos: [
         '/eras/school-trilogy/School-Trilogy-1.jpg',
         '/eras/school-trilogy/School-Trilogy-2.webp',
-        '/eras/school-trilogy/School-Trilogy-3.webp',
+        '/eras/school-trilogy/School-Trilogy-3.webp'
         ],
         albums: [
         { title: '2 COOL 4 SKOOL', year: '2013', cover: '/albumnes/grupal/2-cool-4-skool.webp' },
@@ -27,7 +27,7 @@ export const erasData = [
         photos: [
         '/eras/hyyh/HYYH-1.webp',
         '/eras/hyyh/HYYH-2.webp',
-        '/eras/hyyh/HYYH-3.webp',
+        '/eras/hyyh/HYYH-3.webp'
         ],
         albums: [
         { title: 'The Most Beautiful Moment in Life, Pt. 1', year: '2015', cover: '/albumnes/grupal/hyyh-pt1.webp' },
@@ -44,7 +44,7 @@ export const erasData = [
         photos: [
         '/eras/Wings/Wings-1.webp',
         '/eras/Wings/Wings-2.webp',
-        '/eras/Wings/Wings-3.webp',
+        '/eras/Wings/Wings-3.webp'
         ],
         albums: [
         { title: 'WINGS', year: '2016', cover: '/albumnes/grupal/wings.webp' },
@@ -60,7 +60,7 @@ export const erasData = [
         photos: [
         '/eras/Love-Yourself/Love-Yourself-1.webp',
         '/eras/Love-Yourself/Love-Yourself-2.jpg',
-        '/eras/Love-Yourself/Love-Yourself-3.webp',
+        '/eras/Love-Yourself/Love-Yourself-3.webp'
         ],
         albums: [
         { title: 'LOVE YOURSELF 承 HER', year: '2017', cover: '/albumnes/grupal/love-yourself-her.webp' },
@@ -75,13 +75,13 @@ export const erasData = [
         description:
         'Una etapa introspectiva inspirada en las teorías psicológicas de Carl Jung. BTS reflexiona sobre su identidad, la persona que muestran al mundo, sus sombras, sus inseguridades y la aceptación de todas las partes de uno mismo.',
         photos: [
-        'imagenes/eras/hyyh-1.webp',
-        'imagenes/eras/hyyh-2.webp',
-        'imagenes/eras/hyyh-3.webp'
+        '/eras/Map-of-the-Soul/Map-of-the-Soul-1.webp',
+        '/eras/Map-of-the-Soul/Map-of-the-Soul-2.webp',
+        '/eras/Map-of-the-Soul/Map-of-the-Soul-3.webp'
         ],
         albums: [
-        { title: 'MAP OF THE SOUL: PERSONA', year: '2019', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'MAP OF THE SOUL: 7', year: '2020', cover: 'imagenes/discos/hyyh2.webp' }
+        { title: 'MAP OF THE SOUL: PERSONA', year: '2019', cover: '/albumnes/grupal/mots-persona.webp' },
+        { title: 'MAP OF THE SOUL: 7', year: '2020', cover: '/albumnes/grupal/mots-7.webp' }
         ]
     },
     {
@@ -91,12 +91,12 @@ export const erasData = [
         description:
         'Una etapa colorida, retro y llena de energía disco. Fue el primer sencillo completamente en inglés de BTS y buscaba transmitir alegría, esperanza y optimismo durante la pandemia. Marcó un antes y un después en su popularidad internacional.',
         photos: [
-        'imagenes/eras/hyyh-1.webp',
-        'imagenes/eras/hyyh-2.webp',
-        'imagenes/eras/hyyh-3.webp'
+        '/eras/Dynamite/Dynamite-1.webp',
+        '/eras/Dynamite/Dynamite-2.webp',
+        '/eras/Dynamite/Dynamite-3.webp'
         ],
         albums: [
-        { title: 'DYNAMITE', year: '2020', cover: 'imagenes/discos/hyyh1.webp' },
+        { title: 'DYNAMITE', year: '2020', cover: '/albumnes/grupal/dynamite.webp' },
         ]
     },
     {
@@ -106,12 +106,12 @@ export const erasData = [
         description:
         'Una era mucho más íntima y personal. BTS muestra sus emociones durante la pandemia: incertidumbre, tristeza, frustración, soledad, pero también esperanza. Fue un proyecto especialmente significativo porque los integrantes participaron activamente en su creación y producción.',
         photos: [
-        'imagenes/eras/hyyh-1.webp',
-        'imagenes/eras/hyyh-2.webp',
-        'imagenes/eras/hyyh-3.webp'
+        '/eras/BE/BE-1.webp',
+        '/eras/BE/BE-2.webp',
+        '/eras/BE/BE-3.webp'
         ],
         albums: [
-        { title: 'BE', year: '2020', cover: 'imagenes/discos/hyyh1.webp' },
+        { title: 'BE', year: '2020', cover: '/albumnes/grupal/be.webp' },
         ]
     },
     {
@@ -121,13 +121,13 @@ export const erasData = [
         description:
         'Una etapa divertida, veraniega y llena de confianza. Su música adoptó un estilo pop y disco más ligero, con canciones destinadas a transmitir felicidad, libertad y ganas de bailar.',
         photos: [
-        'imagenes/eras/hyyh-1.webp',
-        'imagenes/eras/hyyh-2.webp',
-        'imagenes/eras/hyyh-3.webp'
+        '/eras/Butter-&-Permission-to-Dance/PTD-BT-1.webp',
+        '/eras/Butter-&-Permission-to-Dance/PTD-BT-2.webp',
+        '/eras/Butter-&-Permission-to-Dance/PTD-BT-3.webp',
         ],
         albums: [
-        { title: 'BUTTER', year: '2021', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'PERMISSION TO DANCE', year: '2021', cover: 'imagenes/discos/hyyh1.webp' }
+        { title: 'BUTTER', year: '2021', cover: '/albumnes/grupal/butter.webp' },
+        { title: 'PERMISSION TO DANCE', year: '2021', cover: '/albumnes/grupal/permission-to-dance.webp' }
         ]
     },
     {
@@ -137,12 +137,12 @@ export const erasData = [
         description:
         'Una etapa de reflexión y celebración de los nueve años de trayectoria del grupo. Es un álbum recopilatorio que reúne canciones representativas de su carrera, temas inéditos y nuevas versiones. También representa el cierre simbólico de su primer capítulo como grupo.',
         photos: [
-        'imagenes/eras/hyyh-1.webp',
-        'imagenes/eras/hyyh-2.webp',
-        'imagenes/eras/hyyh-3.webp'
+        '/eras/Proof/Proof-1.webp',
+        '/eras/Proof/Proof-2.webp',
+        '/eras/Proof/Proof-3.webp'
         ],
         albums: [
-        { title: 'PROOF', year: '2022', cover: 'imagenes/discos/hyyh1.webp' },
+        { title: 'PROOF', year: '2022', cover: '/albumnes/grupal/proof.webp' },
         ]
     },
     {
@@ -152,26 +152,26 @@ export const erasData = [
         description:
         'BTS anuncia el comienzo de su segundo capítulo. Los integrantes empiezan a explorar sus identidades artísticas individuales, publicando álbumes en solitario y experimentando con diferentes géneros musicales. Esta etapa también estuvo marcada por el servicio militar obligatorio de los integrantes y la espera del reencuentro.',
         photos: [
-        'imagenes/eras/hyyh-1.webp',
-        'imagenes/eras/hyyh-2.webp',
-        'imagenes/eras/hyyh-3.webp',
-        'imagenes/eras/hyyh-3.webp',
-        'imagenes/eras/hyyh-3.webp',
-        'imagenes/eras/hyyh-3.webp',
-        'imagenes/eras/hyyh-3.webp',
+        '/eras/Solos/J-hope.webp',
+        '/eras/Solos/Rm.webp',
+        '/eras/Solos/Jimin.webp',
+        '/eras/Solos/Yoongi.webp',
+        '/eras/Solos/Jungkook.webp',
+        '/eras/Solos/V.webp',
+        '/eras/Solos/Jin.webp'
         ],
         albums: [
-        { title: 'Jack In The Box', year: '2022', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'Indigo', year: '2022', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'FACE', year: '2023', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'D-DAY', year: '2023', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'GOLDEN', year: '2023', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'Layover', year: '2023', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'Happy', year: '2024', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'Muse', year: '2024', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'HOPE ON THE STREET VOL.1', year: '2024', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'Right Place, Wrong Person', year: '2024', cover: 'imagenes/discos/hyyh1.webp' },
-        { title: 'Echo', year: '2025', cover: 'imagenes/discos/hyyh1.webp' }
+        { title: 'Jack In The Box', year: '2022', cover: '/albumnes/solista/jack-in-the-box.webp' },
+        { title: 'Indigo', year: '2022', cover: '/albumnes/solista/indigo.webp' },
+        { title: 'FACE', year: '2023', cover: '/albumnes/solista/face.webp' },
+        { title: 'D-DAY', year: '2023', cover: '/albumnes/solista/d-day.webp' },
+        { title: 'GOLDEN', year: '2023', cover: '/albumnes/solista/golden.webp' },
+        { title: 'Layover', year: '2023', cover: '/albumnes/solista/layover.webp' },
+        { title: 'Happy', year: '2024', cover: '/albumnes/solista/Jin-Happy.webp' },
+        { title: 'Muse', year: '2024', cover: '/albumnes/solista/Muse-Jimin.webp' },
+        { title: 'HOPE ON THE STREET VOL.1', year: '2024', cover: '/albumnes/solista/hope-on-street.webp' },
+        { title: 'Right Place, Wrong Person', year: '2024', cover: '/albumnes/solista/right-place.webp' },
+        { title: 'Echo', year: '2025', cover: '/albumnes/solista/Echo.webp' }
         ]
     },
     {
@@ -181,12 +181,12 @@ export const erasData = [
         description:
         'El esperado regreso de los siete integrantes como grupo después de completar el servicio militar. Es una era que representa el reencuentro, la identidad coreana, sus raíces y todo lo que han vivido durante estos años. El álbum toma inspiración de la canción folclórica tradicional coreana «Arirang» y conecta su historia con las emociones universales.',
         photos: [
-        'imagenes/eras/hyyh-1.webp',
-        'imagenes/eras/hyyh-2.webp',
-        'imagenes/eras/hyyh-3.webp'
+        '/eras/ARIRANG/Arirang-1.webp',
+        '/eras/ARIRANG/Arirang-2.webp',
+        '/eras/ARIRANG/Arirang-3.webp',
         ],
         albums: [
-        { title: 'ARIRANG', year: '2026', cover: 'imagenes/discos/hyyh1.webp' },
+        { title: 'ARIRANG', year: '2026', cover: '/albumnes/grupal/arirang.webp' },
         ]
     },
 ];
