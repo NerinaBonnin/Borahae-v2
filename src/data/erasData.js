@@ -12,10 +12,26 @@ export const erasData = [
         '/eras/school-trilogy/School-Trilogy-3.webp'
         ],
         albums: [
-        { title: '2 COOL 4 SKOOL', year: '2013', cover: '/albumnes/grupal/2-cool-4-skool.webp' },
-        { title: 'O!RUL8,2?', year: '2013', cover: '/albumnes/grupal/o-rul8-2.webp' },
-        { title: 'SKOOL LUV AFFAIR', year: '2014', cover: 'albumnes/grupal/skool-luv-affair.webp' },
-        { title: 'DARK & WILD', year: '2014', cover: '/albumnes/grupal/dark-wild.webp' }
+        { 
+            title: '2 COOL 4 SKOOL', 
+            year: '2013', 
+            cover: '/albumnes/grupal/2-cool-4-skool.webp' 
+        },
+        { 
+            title: 'O!RUL8,2?', 
+            year: '2013', 
+            cover: '/albumnes/grupal/o-rul8-2.webp' 
+        },
+        { 
+            title: 'SKOOL LUV AFFAIR', 
+            year: '2014', 
+            cover: 'albumnes/grupal/skool-luv-affair.webp' 
+        },
+        { 
+            title: 'DARK & WILD', 
+            year: '2014', 
+            cover: '/albumnes/grupal/dark-wild.webp' 
+        }
         ]
     },
     {
@@ -30,9 +46,21 @@ export const erasData = [
         '/eras/hyyh/HYYH-3.webp'
         ],
         albums: [
-        { title: 'The Most Beautiful Moment in Life, Pt. 1', year: '2015', cover: '/albumnes/grupal/hyyh-pt1.webp' },
-        { title: 'The Most Beautiful Moment in Life, Pt. 2', year: '2015', cover: '/albumnes/grupal/hyyh-pt2.webp' },
-        { title: 'The Most Beautiful Moment in Life: Young Forever', year: '2016', cover: '/albumnes/grupal/young-forever.webp'},
+        { 
+            title: 'The Most Beautiful Moment in Life, Pt. 1', 
+            year: '2015', 
+            over: '/albumnes/grupal/hyyh-pt1.webp' 
+        },
+        { 
+            title: 'The Most Beautiful Moment in Life, Pt. 2', 
+            year: '2015', 
+            cover: '/albumnes/grupal/hyyh-pt2.webp' 
+        },
+        { 
+            title: 'The Most Beautiful Moment in Life: Young Forever', 
+            year: '2016', 
+            cover: '/albumnes/grupal/young-forever.webp'
+        },
         ]
     },
     {
@@ -47,8 +75,16 @@ export const erasData = [
         '/eras/Wings/Wings-3.webp'
         ],
         albums: [
-        { title: 'WINGS', year: '2016', cover: '/albumnes/grupal/wings.webp' },
-        { title: 'YOU NEVER WALK ALONE', year: '2017', cover: '/albumnes/grupal/you-never-walk-alone.webp' }
+        { 
+            title: 'WINGS', 
+            year: '2016', 
+            cover: '/albumnes/grupal/wings.webp' 
+        },
+        { 
+            title: 'YOU NEVER WALK ALONE', 
+            year: '2017', 
+            cover: '/albumnes/grupal/you-never-walk-alone.webp' 
+        }
         ]
     },
     {
@@ -63,9 +99,21 @@ export const erasData = [
         '/eras/Love-Yourself/Love-Yourself-3.webp'
         ],
         albums: [
-        { title: 'LOVE YOURSELF 承 HER', year: '2017', cover: '/albumnes/grupal/love-yourself-her.webp' },
-        { title: 'LOVE YOURSELF 轉 TEAR', year: '2018', cover: '/albumnes/grupal/love-yourself-tear.webp' },
-        { title: 'LOVE YOURSELF 結 ANSWER', year: '2018', cover: '/albumnes/grupal/love-yourself-answer.webp' }
+        { 
+            title: 'LOVE YOURSELF 承 HER', 
+            year: '2017', 
+            cover: '/albumnes/grupal/love-yourself-her.webp' 
+        },
+        { 
+            title: 'LOVE YOURSELF 轉 TEAR', 
+            year: '2018', 
+            cover: '/albumnes/grupal/love-yourself-tear.webp' 
+        },
+        { 
+            title: 'LOVE YOURSELF 結 ANSWER', 
+            year: '2018', 
+            cover: '/albumnes/grupal/love-yourself-answer.webp' 
+        }
         ]
     },
     {
@@ -80,8 +128,16 @@ export const erasData = [
         '/eras/Map-of-the-Soul/Map-of-the-Soul-3.webp'
         ],
         albums: [
-        { title: 'MAP OF THE SOUL: PERSONA', year: '2019', cover: '/albumnes/grupal/mots-persona.webp' },
-        { title: 'MAP OF THE SOUL: 7', year: '2020', cover: '/albumnes/grupal/mots-7.webp' }
+        { 
+            title: 'MAP OF THE SOUL: PERSONA', 
+            year: '2019', 
+            cover: '/albumnes/grupal/mots-persona.webp' 
+        },
+        { 
+            title: 'MAP OF THE SOUL: 7', 
+            year: '2020', 
+            cover: '/albumnes/grupal/mots-7.webp' 
+        }
         ]
     },
     {
@@ -96,7 +152,11 @@ export const erasData = [
         '/eras/Dynamite/Dynamite-3.webp'
         ],
         albums: [
-        { title: 'DYNAMITE', year: '2020', cover: '/albumnes/grupal/dynamite.webp' },
+        { 
+            title: 'DYNAMITE', 
+            year: '2020', 
+            cover: '/albumnes/grupal/dynamite.webp' 
+        },
         ]
     },
     {
@@ -111,7 +171,11 @@ export const erasData = [
         '/eras/BE/BE-3.webp'
         ],
         albums: [
-        { title: 'BE', year: '2020', cover: '/albumnes/grupal/be.webp' },
+        { 
+            title: 'BE', 
+            year: '2020', 
+            cover: '/albumnes/grupal/be.webp' 
+        },
         ]
     },
     {
@@ -126,8 +190,16 @@ export const erasData = [
         '/eras/Butter-&-Permission-to-Dance/PTD-BT-3.webp',
         ],
         albums: [
-        { title: 'BUTTER', year: '2021', cover: '/albumnes/grupal/butter.webp' },
-        { title: 'PERMISSION TO DANCE', year: '2021', cover: '/albumnes/grupal/permission-to-dance.webp' }
+        { 
+            title: 'BUTTER', 
+            year: '2021', 
+            cover: '/albumnes/grupal/butter.webp' 
+        },
+        { 
+            title: 'PERMISSION TO DANCE', 
+            year: '2021', 
+            cover: '/albumnes/grupal/permission-to-dance.webp' 
+        }
         ]
     },
     {
@@ -142,7 +214,11 @@ export const erasData = [
         '/eras/Proof/Proof-3.webp'
         ],
         albums: [
-        { title: 'PROOF', year: '2022', cover: '/albumnes/grupal/proof.webp' },
+        { 
+            title: 'PROOF', 
+            year: '2022', 
+            cover: '/albumnes/grupal/proof.webp' 
+        },
         ]
     },
     {
@@ -161,17 +237,60 @@ export const erasData = [
         '/eras/Solos/Jin.webp'
         ],
         albums: [
-        { title: 'Jack In The Box', year: '2022', cover: '/albumnes/solista/jack-in-the-box.webp' },
-        { title: 'Indigo', year: '2022', cover: '/albumnes/solista/indigo.webp' },
-        { title: 'FACE', year: '2023', cover: '/albumnes/solista/face.webp' },
-        { title: 'D-DAY', year: '2023', cover: '/albumnes/solista/d-day.webp' },
-        { title: 'GOLDEN', year: '2023', cover: '/albumnes/solista/golden.webp' },
-        { title: 'Layover', year: '2023', cover: '/albumnes/solista/layover.webp' },
-        { title: 'Happy', year: '2024', cover: '/albumnes/solista/Jin-Happy.webp' },
-        { title: 'Muse', year: '2024', cover: '/albumnes/solista/Muse-Jimin.webp' },
-        { title: 'HOPE ON THE STREET VOL.1', year: '2024', cover: '/albumnes/solista/hope-on-street.webp' },
-        { title: 'Right Place, Wrong Person', year: '2024', cover: '/albumnes/solista/right-place.webp' },
-        { title: 'Echo', year: '2025', cover: '/albumnes/solista/Echo.webp' }
+        { 
+            title: 'Jack In The Box', 
+            year: '2022', 
+            cover: '/albumnes/solista/jack-in-the-box.webp' 
+        },
+        { 
+            title: 'Indigo', 
+            year: '2022', 
+            cover: '/albumnes/solista/indigo.webp' 
+        },
+        { 
+            title: 'FACE', 
+            year: '2023', 
+            cover: '/albumnes/solista/face.webp' 
+        },
+        { 
+            title: 'D-DAY', 
+            year: '2023', 
+            cover: '/albumnes/solista/d-day.webp' 
+        },
+        { 
+            title: 'GOLDEN', 
+            year: '2023', 
+            cover: '/albumnes/solista/golden.webp' 
+        },
+        { 
+            title: 'Layover', 
+            year: '2023', 
+            cover: '/albumnes/solista/layover.webp' 
+        },
+        { 
+            title: 'Happy', 
+            year: '2024', 
+            cover: '/albumnes/solista/Jin-Happy.webp' 
+        },
+        { 
+            title: 'Muse',
+            year: '2024', 
+            cover: '/albumnes/solista/Muse-Jimin.webp' 
+        },
+        { 
+            title: 'HOPE ON THE STREET VOL.1', 
+            year: '2024', 
+            cover: '/albumnes/solista/hope-on-street.webp' 
+        },
+        { 
+            title: 'Right Place, Wrong Person', 
+            year: '2024', 
+            cover: '/albumnes/solista/right-place.webp' },
+        { 
+            title: 'Echo', 
+            year: '2025', 
+            cover: '/albumnes/solista/Echo.webp' 
+        }
         ]
     },
     {
@@ -186,7 +305,11 @@ export const erasData = [
         '/eras/ARIRANG/Arirang-3.webp',
         ],
         albums: [
-        { title: 'ARIRANG', year: '2026', cover: '/albumnes/grupal/arirang.webp' },
+        { 
+            title: 'ARIRANG', 
+            year: '2026', 
+            cover: '/albumnes/grupal/arirang.webp' 
+        },
         ]
     },
 ];

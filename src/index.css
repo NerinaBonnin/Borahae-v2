@@ -668,8 +668,8 @@ section{
 
 .albums-grid, .solo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el ancho de cada tarjeta */
-  gap: 20px; /* Espacio entre cada álbum */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px; 
   padding: 20px 0;
 }
 
@@ -682,17 +682,17 @@ section{
 
 .album-cover {
   width: 100%;
-  max-width: 320px; /* Tamaño máximo deseado */
-  aspect-ratio: 1 / 1; /* Mantiene la portada perfectamente cuadrada */
+  max-width: 320px; 
+  aspect-ratio: 1 / 1; 
   object-fit: cover;
-  border-radius: 8px; /* Opcional: bordes ligeramente redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra elegante */
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   transition: transform 0.2s ease;
 }
 
 .album-cover:hover {
-  transform: scale(1.04); /* Efecto hover al pasar el mouse */
-}
+  transform: scale(1.04);
+} 
 
 .album-name {
   margin-top: 8px;
@@ -701,8 +701,6 @@ section{
   color: #333;
 }
 
-/* Botón de favorito flotante en la portada del álbum */
-/* Botón flotante */
 .album-fav-btn {
   position: absolute;
   top: 10px;
@@ -727,7 +725,6 @@ section{
   background: rgba(0, 0, 0, 0.65);
 }
 
-/* Corazón centrado a la fuerza */
 .fav-heart {
   font-size: 1.1rem;
   line-height: 1;
@@ -741,8 +738,6 @@ section{
   color: rgb(107, 23, 136);
   transform: scale(1.2);
 }
-
-/* VENTANA EMERGENTE DE DISCOGRAPHY */
 
 .album-modal-overlay {
   position: fixed;
@@ -759,7 +754,6 @@ section{
   overflow-y: auto;
 }
 
-/* Contenedor principal de la ventana */
 .album-modal-content {
   background: var(--card) !important; 
   color: var(--text) !important;
@@ -826,11 +820,10 @@ section{
 .modal-info-header h2 {
   font-size: 2.2rem;
   margin: 5px 0 20px 0;
-  font-family: serif; /* O la tipografía elegante que uses */
+  font-family: serif; 
   color: #222;
 }
 
-/* Metadatos (Lanzamiento, Sello, etc.) */
 .modal-meta-grid {
   display: flex;
   gap: 25px;
@@ -861,7 +854,6 @@ section{
   margin: 25px 0;
 }
 
-/* Historia */
 .modal-story-section h3, .modal-tracks-section h3 {
   font-size: 0.75rem;
   letter-spacing: 1.5px;
@@ -879,7 +871,6 @@ section{
   color: var(--text) !important; 
 }
 
-/* Lista de canciones idéntica a la primera foto */
 .tracklist{
   list-style: none;
   padding: 0;
@@ -913,7 +904,6 @@ section{
   font-size: 0.85rem;
 }
 
-/* Tipografía elegante para el título del modal */
 .album-modal-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.4rem;
@@ -1002,7 +992,6 @@ section{
   line-height:1.7
 }
 
-/* ─── IMPACT ─── */
 #sound-impact{
   padding: 60px 20px;
   text-align: center;
@@ -1059,7 +1048,6 @@ button, p{
   margin-bottom:3rem
 }
 
-/* ACRONYM BLOCK */
 .army-acronym-block{
   display:grid;
   grid-template-columns:auto 1fr;
@@ -1252,215 +1240,6 @@ button, p{
   background:rgba(180,140,200,.08)
 }
 
-/* VOICES GRID */
-.army-voice-section{
-  margin-bottom:4rem
-}
-
-.army-voice-header{
-  margin-bottom:1.5rem
-}
-
-.army-voice-sub{
-  font-size:.9rem;
-  color:var(--muted);
-  margin-top:.5rem
-}
-
-.army-voices-grid{
-  display:grid;
-  grid-template-columns:1.4fr 1fr;
-  grid-template-rows:auto auto;
-  gap:1rem
-}
-
-.army-voice-card{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:4px;
-  padding:1.8rem;
-  transition:border-color .2s
-}
-
-.army-voice-card:hover{
-  border-color:var(--accent)
-}
-
-.avc-large{
-  grid-row:span 2;
-  display:flex;
-  flex-direction:column;
-  justify-content:center
-}
-
-.avc-quote{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.2rem;
-  font-style:italic;
-  line-height:1.7;
-  color:var(--text);
-  margin-bottom:1rem
-}
-
-.avc-large .avc-quote{
-  font-size:1.5rem
-}
-
-.avc-origin{
-  font-size:.68rem;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  color:var(--accent)
-}
-
-/* QUIZ */
-.army-quiz-section{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:6px;
-  padding:2.5rem
-}
-
-.army-quiz-header{
-  margin-bottom:1.5rem
-}
-
-.army-quiz-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.8rem;
-  font-weight:300;
-  color:var(--text);
-  margin-top:.4rem
-}
-
-.army-quiz-options{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.7rem;
-  margin-bottom:1.5rem
-}
-
-.aq-btn{
-  background:none;
-  border:1px solid var(--border);
-  border-radius:30px;
-  padding:.55rem 1.2rem;
-  font-size:.8rem;
-  color:var(--text);
-  cursor:pointer;
-  font-family:'DM Sans',sans-serif;
-  transition:all .2s
-}
-
-.aq-btn:hover{
-  background:var(--surface);
-  border-color:var(--accent)
-}
-
-.aq-btn.selected{
-  background:var(--deep);
-  color:var(--cream);
-  border-color:var(--deep)
-}
-
-.army-quiz-result{
-  min-height:80px;
-  padding:1.2rem 1.5rem;
-  border-radius:4px;
-  background:var(--surface);
-  font-size:.92rem;
-  color:var(--muted);
-  line-height:1.7;
-  transition:all .35s;
-  display:none
-}
-
-.army-quiz-result.visible{
-  display:block
-}
-
-.aqr-type{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.4rem;
-  color:var(--text);
-  margin-bottom:.4rem
-}
-
-
-
-/* ─── CALENDAR ─── */
-#calendar{
-  background:var(--bg)
-}
-
-.cal-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
-  gap:1rem
-}
-
-.cal-card{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:6px;
-  padding:1.2rem;
-  display:flex;
-  gap:1rem;
-  align-items:center;
-  transition:border-color .2s
-}
-
-.cal-card:hover{
-  border-color:var(--accent)
-}
-.cal-date-box{
-  background:var(--surface);
-  border-radius:4px;
-  padding:.6rem .8rem;
-  text-align:center;
-  min-width:56px;
-  flex-shrink:0
-}
-
-.cal-month{
-  font-size:.58rem;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-  color:var(--accent)
-}
-
-.cal-day{
-  font-family:'Cormorant Garamond',serif;
-  font-size:2rem;
-  font-weight:300;
-  color:var(--text);
-  line-height:1
-}
-
-.cal-event-name{
-  font-size:.88rem;
-  font-weight:500;
-  color:var(--text);
-  margin-bottom:.2rem
-}
-
-.cal-event-desc{
-  font-size:.75rem;
-  color:var(--muted)
-}
-
-.cal-upcoming{
-  display:inline-block;
-  font-size:.58rem;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  padding:.2rem .6rem;
-  background:var(--accent);
-  color:white;
-  border-radius:10px;
-  margin-top:.3rem
-}
-
 /* ─── LYRICS ─── */
 #lyrics { 
   background: var(--border); 
@@ -1474,14 +1253,12 @@ button, p{
   line-height: 1.75;
 }
 
-/* Grid */
 .lyrics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.3rem;
 }
 
-/* Card */
 .lyric-card {
   cursor: pointer;
   border-radius: 16px;
@@ -1502,7 +1279,6 @@ button, p{
   padding: 1.4rem 1.4rem 1rem; 
 }
 
-/* Quote text */
 .lyric-card-quote {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
@@ -1513,7 +1289,6 @@ button, p{
   font-style: italic;
 }
 
-/* Song row */
 .lyric-card-song-row {
   display: flex;
   align-items: center;
@@ -1543,17 +1318,15 @@ button, p{
   opacity: 1; 
 }
 
-/* Optional image inside card */
 .lyric-card-img {
   width: 100%;
-  height: 200px; /* opcional pero recomendado */
+  height: 200px; 
   display: block;
   object-fit: cover;
   object-position: center;
   border-top: 1px solid var(--border);
 }
 
-/* Colored left border accent */
 .lyric-card::before {
   content: '';
   position: absolute;
@@ -1564,7 +1337,6 @@ button, p{
   border-radius: 0 0 0 16px;
 }
 
-/* LYRIC MODAL */
 .lyric-overlay {
   position: fixed;
   inset: 0;
@@ -1583,7 +1355,7 @@ button, p{
   color: #2b211c;
   border-radius: 24px;
   width: 100%;
-  max-width: 700px; /* <--- Aumentamos el ancho máximo aquí (antes era 480px) */
+  max-width: 700px; 
   max-height: 92vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -1704,7 +1476,7 @@ button, p{
 
 .lyric-modal-card-preview img {
   width: 100%;
-  max-width: 300px; /* <--- Ajustado para que la tarjeta de la frase también se expanda con el modal */
+  max-width: 300px; 
   height: auto;
   border-radius: 16px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
@@ -1816,15 +1588,14 @@ button, p{
   gap: 0.4rem;
 }
 
-/* ─── ESTILOS PARA EL BOTÓN DE FAVORITO (CORAZÓN) ─── */
 .lyric-card {
-  position: relative; /* Necesario para que el corazón se posicione respecto a la tarjeta */
+  position: relative; 
 }
 
 .fav-btn {
   position: absolute;
   top: 14px;
-  right: 14px; /* Lo ubicamos prolijamente arriba a la derecha */
+  right: 14px; 
   background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(4px);
   border: none;
@@ -1847,28 +1618,27 @@ button, p{
 }
 
 .fav-btn.active {
-  color: rgb(107, 23, 136); /* Color rojo/rosa vibrante cuando está marcado como favorito */
+  color: rgb(107, 23, 136); 
   background: rgba(0, 0, 0, 0.65);
 }
 
-/* Posición específica para el corazón dentro del modal */
 .lyric-modal .fav-btn.modal-fav {
-  right: 65px; /* Para que no se encime con la cruz de cerrar */
+  right: 65px; 
   top: 14px;
 }
 
 #lyrics {
   width: 100%;
-  max-width: 1400px; /* Ampliamos el ancho máximo para aprovechar mejor la pantalla */
+  max-width: 1400px; 
   margin: 0 auto;
-  padding: 5rem 4%;    /* Usamos porcentajes para que el margen lateral sea flexible y estético */
+  padding: 5rem 4%;    
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
 .lyrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Columnas automáticas y adaptables */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
   gap: 2rem;
   width: 100%;
   box-sizing: border-box;
@@ -1876,14 +1646,14 @@ button, p{
 
 .lyric-card {
   width: 100%;
-  min-width: 0; /* Evita que el contenido interno empuje el ancho de la tarjeta */
+  min-width: 0; 
   box-sizing: border-box;
 }
 
-/* Espacio de seguridad para que la frase no se encime con el botón del corazón */
 .lyric-card-quote {
   padding-right: 2.5rem;
 }
+
 
 /* ─── QUOTES ─── */
 #quotes{
@@ -1943,7 +1713,7 @@ button, p{
   color:var(--accent)
 }
 
-/* ─── TIMELINE, FAVORITOS Y MODAL DE ERAS ─── */
+/* ─── ERAS ─── */
 #eras {
   background: var(--bg);
 }
@@ -2021,7 +1791,6 @@ button, p{
   margin: 0;
 }
 
-/* Corazón al lado del título de la era (igual al estilo del sitio) */
 .era-fav-btn {
   appearance: none;
   background: var(--surface);
@@ -2054,7 +1823,6 @@ button, p{
   filter: drop-shadow(0 0 4px rgba(107, 23, 136, 0.35));
 }
 
-/* Fondo oscuro detrás del modal de Eras */
 .era-overlay {
   position: fixed;
   inset: 0;
@@ -2067,7 +1835,6 @@ button, p{
   padding: 1.25rem;
 }
 
-/* Ventana modal de la Era */
 .era-modal {
   background: var(--card);
   color: var(--text);
@@ -2086,7 +1853,6 @@ button, p{
   animation: fadeUp 0.3s ease;
 }
 
-/* Botón X de cierre arriba a la derecha */
 .era-modal-close {
   position: absolute;
   top: 1.2rem;
@@ -2113,7 +1879,6 @@ button, p{
   transform: scale(1.06);
 }
 
-/* Corazón dentro del modal al lado izquierdo de la X */
 .era-modal .era-modal-fav {
   position: absolute;
   top: 1.2rem;
@@ -2159,7 +1924,6 @@ button, p{
   padding-bottom: 0.45rem;
 }
 
-/* Galería de fotos dentro del modal */
 .era-photos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -2179,7 +1943,6 @@ button, p{
   transform: scale(1.03);
 }
 
-/* Grilla de discos dentro del modal */
 .era-albums-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -2290,7 +2053,6 @@ button, p{
   color: #ffffff;
 }
 
-/* Estado vacío cuando aún no hay likes */
 .favs-empty-box {
   background: var(--card);
   border: 1px dashed var(--border);
@@ -2321,7 +2083,6 @@ button, p{
   max-width: 440px;
 }
 
-/* Contenedor de categorías */
 .favs-categories {
   display: flex;
   flex-direction: column;
@@ -2351,7 +2112,6 @@ button, p{
   border-radius: 999px;
 }
 
-/* Tarjetas de Integrantes, Álbumes y Eras */
 .favs-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -2413,7 +2173,6 @@ button, p{
   flex-shrink: 0;
 }
 
-/* Tarjetas de Letras guardadas */
 .favs-lyrics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -2461,7 +2220,6 @@ button, p{
 }
 
 /* ─── MODALS ─── */
-/* Estructura general de la tarjeta modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -2542,7 +2300,6 @@ button, p{
   margin: 0.5rem 0;
 }
 
-/* Ficha técnica (Facts) */
 .modal-facts {
   display: flex;
   flex-direction: column;
@@ -3141,7 +2898,7 @@ button, p{
 }
 
 /* ==========================================
-        DISEÑO RESPONSIVO CON MEDIA QUERIES
+    DISEÑO RESPONSIVO CON MEDIA QUERIES
    ========================================== */
 
 /* Tablets y Celulares (menores a 991px) */

@@ -49,8 +49,7 @@ export function Eras() {
                     <h3
                         className="era-title-clickable"
                         onClick={() => setSelectedEra(era)}
-                        title="Hacé clic para ver fotos y discos de esta era"
-                    >
+                        title="Hacé clic para ver fotos y discos de esta era">
                         {era.title}
                     </h3>
 
@@ -58,8 +57,7 @@ export function Eras() {
                         className={`era-fav-btn ${isFav ? 'active' : ''}`}
                         onClick={(e) => toggleFavorite(e, era)}
                         title={isFav ? "Quitar era de favoritos" : "Guardar era en favoritos"}
-                        aria-label="Favorito"
-                    >
+                        aria-label="Favorito">
                         {isFav ? '♥' : '♡'}
                     </button>
                     </div>
@@ -73,10 +71,7 @@ export function Eras() {
 
         {/* Modal con fotos y discos de la era seleccionada */}
         {selectedEra && (
-            <div
-            className="era-overlay"
-            onClick={() => setSelectedEra(null)}
-            >
+            <div className="era-overlay"onClick={() => setSelectedEra(null)}>
             <div className="era-modal" onClick={(e) => e.stopPropagation()}>
             {/* Botón X bien visible arriba a la derecha */}
             <button
