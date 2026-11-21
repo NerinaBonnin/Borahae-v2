@@ -23,8 +23,7 @@ export function Army() {
                             <div 
                                 key={item.id}
                                 className={`army-letter ${activeAcronym === item.id ? "active" : ""}`}
-                                onClick={() => setActiveAcronym(item.id)}
-                            >
+                                onClick={() => setActiveAcronym(item.id)}>
                                 {item.letter}
                             </div>
                         ))}
@@ -34,8 +33,7 @@ export function Army() {
                     {armyAcronymData.map((item) => (
                         <div 
                             key={item.id}
-                            className={`army-acronym-panel ${activeAcronym === item.id ? "active" : ""}`}
-                        >
+                            className={`army-acronym-panel ${activeAcronym === item.id ? "active" : ""}`}>
                             <span className="ai-label">{item.label}</span>
                             <p className="ai-desc">{item.desc}</p>
                         </div>

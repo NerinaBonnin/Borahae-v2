@@ -68,7 +68,6 @@ export function Discography() {
             </div>
 
             {/* Grilla dinámica según la pestaña activa */}
-            {/* Grilla dinámica según la pestaña activa */}
             <div className="disc-panel active" id="panel-group">
                 <div className="albums-grid fade-in" id="group-grid">
                     {currentCovers.map(([key, src]) => {
@@ -78,8 +77,8 @@ export function Discography() {
                                 key={key} 
                                 className="album-card" 
                                 onClick={() => setSelectedAlbumKey(key)}
-                                style={{ cursor: 'pointer' }}
-                            >
+                                style={{ cursor: 'pointer' }}>
+                                
                                 {/* Contenedor de la portada con el botón del corazón flotante */}
                                 <div style={{ position: 'relative' }}>
                                     <img src={src} alt={key} className="album-cover" />
@@ -88,8 +87,8 @@ export function Discography() {
                                         onClick={(e) => {
                                             e.stopPropagation(); 
                                             toggleFavoriteAlbum(key);
-                                        }}
-                                    >
+                                        }}>
+                                        
                                         <span className={`fav-heart ${favoriteAlbums.includes(key) ? "active" : ""}`}>
                                             {favoriteAlbums.includes(key) ? "♥" : "♡"}
                                         </span>
@@ -172,7 +171,6 @@ export function Discography() {
                                 ))}
                             </ul>
                         </div>
-
                     </div>
                 </div>
             )}
