@@ -8,7 +8,8 @@ import { Army } from "./components/army";
 import { Lyrics } from "./components/lyrics";
 import { Quotes } from "./components/quotes";
 import { Eras } from "./components/eras";
-import { Journey } from "./components/Journey"; 
+import { Journey } from "./components/Journey";
+import { Footer } from "./components/footer"; 
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
             <Quotes />
             <Eras />
             <Journey />
+            <Footer />
         </div>
     );
 }
