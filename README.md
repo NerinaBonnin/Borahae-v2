@@ -2,10 +2,19 @@
 
 > Archivo editorial e interactivo dedicado a la música y el universo de **BTS (Bangtan Sonyeondan)**.
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+<div align="center">
+    <img src="./public/imagenes/banner-1.jpg" alt="BTS Borahae" width="220" />
+    <h1>Borahae — BTS Interactive Archive</h1>
+    <p>
+        Archivo editorial e interactivo dedicado a la música, la historia, las eras y el universo cultural de <strong>BTS (Bangtan Sonyeondan)</strong>.
+    </p>
+    <p>
+        <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+        <img src="https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+    </p>
+</div>
 
 **[Ver Demo en Vivo](https://tu-link-de-deploy.vercel.app)** 
 
@@ -16,6 +25,69 @@
 | Modo Claro | Modo Oscuro & Mis Favoritos |
 | :---: | :---: |
 | ![Vista Modo Claro](./public/screenshots/modo-claro.png) | ![Vista Modo Oscuro](./public/screenshots/modo-oscuro.png) |
+<div align="center">
+    <table>
+        <tr>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/modo-claro.png" alt="Inicio y Modo Claro" width="100%" />
+                <br />
+                <sub><b>Modo Claro</b></sub>
+            </td>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/modo-oscuro.png" alt="Mis Favoritos en Modo Oscuro" width="100%" />
+                <br />
+                <sub><b>Modo Oscuro</b></sub>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/Integrantes.png" alt="Integrantes" width="100%" />
+                <br />
+                <sub><b>Integrantes</b></sub>
+            </td>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/Discografía.png" alt="Discografía" width="100%" />
+                <br />
+                <sub><b>Discografía</b></sub>
+            </td>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/Presentaciones.png" alt="Presentaciones" width="100%" />
+                <br />
+                <sub><b>Presentaciones</b></sub>
+            </td>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/Experiencia-sonora.png" alt="Experiencia-Sonora" width="100%" />
+                <br />
+                <sub><b>Experiencia Sonora</b></sub>
+            </td>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/army.png" alt="Army" width="100%" />
+                <br />
+                <sub><b>ARMY</b></sub>
+            </td>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/Letras.png" alt="Letras" width="100%" />
+                <br />
+                <sub><b>Letras de canciones</b></sub>
+            </td>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/Frases.png" alt="Frases" width="100%" />
+                <br />
+                <sub><b>Frases de BTS</b></sub>
+            </td>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/Eras.png" alt="Eras" width="100%" />
+                <br />
+                <sub><b>Eras de bts</b></sub>
+            </td>
+            <td align="center" width="50%">
+                <img src="./public/screenshots/Favoritos.png" alt="Mis Favoritos" width="100%" />
+                <br />
+                <sub><b>Mis Favoritos</b></sub>
+            </td>
+        </tr>
+    </table>
+</div>
 
 ---
 
@@ -44,9 +116,26 @@
 
 ---
 
+## Instalación y Ejecución Local
+
+1) **Cloná el repositorio:**
+    ```bash
+    git clone [https://github.com/NerinaBonnin/borahae-v2.git](https://github.com/NerinaBonnin/borahae-v2.git)
+
+2) **Ingresá al directorio del proyecto:**
+    cd borahae-v2
+
+3) **Instalá las dependencias:**
+    npm install
+
+4) **Levantá el servidor de desarrollo:**
+    npm run dev
+
+
+---
+
 ## Autora
 Desarrollado por **Nerina Luciana Bonnin**
 
 > GitHub: https://github.com/NerinaBonnin
 > Linkedin: https://www.linkedin.com/in/nerina-bonnin-ba8879252/
-
