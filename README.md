@@ -1,6 +1,5 @@
 
 <div align="center">
-    <img src="./public/imagenes/banner-1.jpg" alt="BTS Borahae" width="100%" />
     <h1>Borahae — BTS Interactive Archive</h1>
     <p>
         Archivo editorial e interactivo dedicado a la música, la historia, las eras y el universo cultural de <strong>BTS (Bangtan Sonyeondan)</strong>.
