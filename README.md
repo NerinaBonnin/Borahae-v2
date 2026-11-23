@@ -60,12 +60,15 @@
     git clone [https://github.com/NerinaBonnin/borahae-v2.git](https://github.com/NerinaBonnin/borahae-v2.git)
 
 2) **Ingresá al directorio del proyecto:**
+    ```bash
     cd borahae-v2
 
-3) **Instalá las dependencias:**
+4) **Instalá las dependencias:**
+    ```bash
     npm install
 
-4) **Levantá el servidor de desarrollo:**
+6) **Levantá el servidor de desarrollo:**
+    ```bash
     npm run dev
 
 
