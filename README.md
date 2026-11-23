@@ -5,6 +5,7 @@
     <p>
         Archivo editorial e interactivo dedicado a la música, la historia, las eras y el universo cultural de <strong>BTS (Bangtan Sonyeondan)</strong>.
     </p>
+    <img src="./public/imagenes/banner-1.jpg" alt="BTS Borahae" width="100%" />
     <p>
         <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
         <img src="https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
