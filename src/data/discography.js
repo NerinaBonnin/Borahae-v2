@@ -2207,7 +2207,7 @@ export const soloAlbumsData = {
     'rm-mix':{ 
     title:'RM', 
     member:'RM', 
-    type:'Mixtape', 
+    type:'Miembro: RM', 
     gradient:'linear-gradient(135deg,#1a1a1a,#444)', 
     meta:{'Lanzamiento':'2015',
         'Artista':'RM',
@@ -2289,7 +2289,7 @@ export const soloAlbumsData = {
     'agust-d':{ 
     title:'Agust D', 
     member:'Suga', 
-    type:'Mixtape', 
+    type:'Miembro: Suga', 
     gradient:'linear-gradient(135deg,#1a1a1a,#555)', 
     meta:{
         'Lanzamiento':'15 ago, 2016',
@@ -2368,7 +2368,7 @@ export const soloAlbumsData = {
     'hope-world':{ 
     title:'Hope World', 
     member:'J-Hope', 
-    type:'Mixtape', 
+    type:'Miembro: J-Hope', 
     gradient:'linear-gradient(135deg,#ff4040,#ff8000)', 
     meta:{
         'Lanzamiento':'2 mar, 2018',
@@ -2426,7 +2426,7 @@ export const soloAlbumsData = {
     'mono':{ 
     title:'mono.', 
     member:'RM', 
-    type:'Playlist / Mixtape', 
+    type:'Miembro: RM', 
     gradient:'linear-gradient(135deg,#f0ede0,#c0bdb0)', 
     meta:{
         'Lanzamiento':'23 oct, 2018',
@@ -2486,7 +2486,7 @@ export const soloAlbumsData = {
     'D-2':{ 
     title:'D-2', 
     member:'Suga', 
-    type:'Mixtape', 
+    type:'Miembro: Suga', 
     gradient:'linear-gradient(135deg,#f0ede0,#c0bdb0)', 
     meta:{
         'Lanzamiento':'22 may, 2020',
@@ -2565,7 +2565,7 @@ export const soloAlbumsData = {
     'jack-in-the-box':{ 
     title:'Jack In The Box', 
     member:'J-Hope', 
-    type:'Álbum de estudio', 
+    type:'Miembro: J-Hope', 
     gradient:'linear-gradient(135deg,#2a2a1a,#5a5f48)', 
     meta:{
         'Lanzamiento':'15 jul, 2022',
@@ -2639,7 +2639,8 @@ export const soloAlbumsData = {
 
     'the-astronaut':{ 
     title:'The Astronaut', 
-    member:'Jin', type:'Single', 
+    member:'Jin', 
+    type:'Miembro: Jin', 
     gradient:'linear-gradient(135deg,#0a0a2a,#1a2a5a)', 
     meta:{
         'Lanzamiento':'28 oct, 2022',
@@ -2660,7 +2661,7 @@ export const soloAlbumsData = {
     'indigo':{ 
     title:'Indigo', 
     member:'RM', 
-    type:'Álbum de estudio', 
+    type:'Miembro: RM', 
     gradient:'linear-gradient(135deg,#3C2F2A,#7a5c50)', 
     meta:{
         'Lanzamiento':'2 dic, 2022',
@@ -2742,7 +2743,7 @@ export const soloAlbumsData = {
     'face':{ 
     title:'FACE', 
     member:'Jimin', 
-    type:'Álbum de estudio', 
+    type:'Miembro: Jimin', 
     gradient:'linear-gradient(135deg,#b0b0b8,#808090)', 
     meta:{
         'Lanzamiento':'24 mar, 2023',
@@ -2793,7 +2794,7 @@ export const soloAlbumsData = {
     'd-day':{ 
     title:'D-DAY', 
     member:'Suga', 
-    type:'Álbum de estudio', 
+    type:'Miembro: Suga', 
     gradient:'linear-gradient(135deg,#2a2a2a,#4a4a4a)', 
     meta:{
         'Lanzamiento':'21 abr, 2023',
@@ -2871,7 +2872,7 @@ export const soloAlbumsData = {
     'layover':{ 
     title:'Layover', 
     member:'V', 
-    type:'Álbum de estudio', 
+    type:'Miembro: V', 
     gradient:'linear-gradient(135deg,#c8b890,#8a7550)', 
     meta:{
         'Lanzamiento':'8 sep, 2023',
@@ -2922,7 +2923,7 @@ export const soloAlbumsData = {
     'golden':{ 
     title:'GOLDEN', 
     member:'Jungkook', 
-    type:'Álbum de estudio', 
+    type:'Miembro: Jungkook', 
     gradient:'linear-gradient(135deg,#1a3a1a,#2d6a2d)', 
     meta:{
         'Lanzamiento':'3 nov, 2023',
@@ -3006,7 +3007,7 @@ export const soloAlbumsData = {
     'hope-on-street':{ 
     title:'Hope on the Street Vol.1', 
     member:'J-Hope', 
-    type:'EP', 
+    type:'Miembro: J-Hope', 
     gradient:'linear-gradient(135deg,#1a1a2a,#3a3a5a)', 
     meta:{
         'Lanzamiento':'29 mar, 2024',
@@ -3055,7 +3056,7 @@ export const soloAlbumsData = {
     'happy':{ 
     title:'Happy', 
     member:'Jin', 
-    type:'Álbum de estudio', 
+    type:'Miembro: Jin', 
     gradient:'linear-gradient(135deg,#1a50d8,#3a70f8)', 
     meta:{
         'Lanzamiento':'2 ago, 2024',
@@ -3107,7 +3108,7 @@ export const soloAlbumsData = {
     'right-place':{ 
     title:'Right Place, Wrong Person', 
     member:'RM', 
-    type:'Álbum de estudio', 
+    type:'Miembro: RM', 
     gradient:'linear-gradient(135deg,#f0ede0,#c8c4b0)', 
     meta:{
         'Lanzamiento':'24 may, 2024',
@@ -3190,7 +3191,7 @@ export const soloAlbumsData = {
     'Muse':{ 
     title:'Muse', 
     member:'Jimin', 
-    type:'Álbum de estudio', 
+    type:'Miembro: Jimin', 
     gradient:'linear-gradient(135deg,#f0ede0,#c8c4b0)', 
     meta:{
         'Lanzamiento':'19 jul, 2024',
